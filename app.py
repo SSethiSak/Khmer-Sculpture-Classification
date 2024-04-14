@@ -1,13 +1,9 @@
-import pickle 
 import model
 import numpy as np
-from PIL import Image
 import streamlit as st
 import tensorflow as tf
 from matplotlib.pyplot import imshow
 from tensorflow.keras.preprocessing import image
-import numpy as np
-
 base_learning_rate = 0.005
 loaded_model = model.sculpture_model()
 
