@@ -1,4 +1,4 @@
-tensorflow == 2.15.0
-numpy == 1.26.1
-matplotlib == 3.8.3
-streamlit == 1.32.0
+tensorflow
+numpy
+matplotlib
+streamlit
