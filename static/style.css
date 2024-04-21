@@ -1,0 +1,120 @@
+.custom-popover {
+    --bs-popover-max-width: 200px;
+    --bs-popover-border-color: var(--bd-violet-bg);
+    --bs-popover-header-bg: var(--bd-violet-bg);
+    --bs-popover-header-color: var(--bs-white);
+    --bs-popover-body-padding-x: 1rem;
+    --bs-popover-body-padding-y: .5rem;
+  }
+.mainbody {
+    background-image: url('Bg.jpg');
+}
+.container {
+  display: grid;
+   grid-template-rows: 0.15fr 0.15fr 0.3fr 0.1fr 0.3fr 0.5fr 0.1fr 0.1fr 3fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+  /* grid-gap:1em 1em; */
+  /* grid-template-areas: 
+  'header header header'
+  'body2 body2 body2'
+  'body3 body3 body3'
+  'body4 body4 body4'
+  'body5 body5 body5'
+  'body6 body6 body6'
+  'body7 body7 body7'
+  'body8 body8 body8' */
+
+  min-height: 100%;
+}
+
+.item-1 {
+
+
+ grid-row:1/2;
+ grid-column: 1/4;
+}
+
+.item-2 {
+ justify-self: center;
+ align-self: center;
+
+ grid-row: 2/3;
+ grid-column: 1/1;
+
+}
+.item-3 {
+  justify-self: start;
+  align-self: center;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  
+} 
+.item-4 {
+  justify-self: center;
+  align-self: center;
+  grid-row: 2/3;
+  grid-column: 2/4;
+}
+.item-5 {
+  justify-self: center;
+
+  grid-column: 1/2;
+  grid-row: 3/4;
+
+}
+.item-6 {
+  justify-self: center;
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.item-7 {
+  justify-self: stretch;
+  align-self: stretch;
+  grid-row: 4/5;
+  grid-column: 1/4;
+  background-image: linear-gradient(to right, rgb(0, 174, 84), rgb(193, 193, 0));
+}
+.item-07 {
+  justify-self: stretch;
+  align-self: stretch;
+  grid-row: 8/9;
+  grid-column:  1/4;
+  background-image: linear-gradient(to left, rgb(0, 174, 84), rgb(193, 193, 0));
+}
+.item-8{
+  grid-row:5/ 7;
+  grid-column: 1/ 2;
+  justify-self: center;
+  align-self: stretch;
+  background-color: #FFCC99;
+  border: 2px solid #000000;
+  min-width: 1fr;
+}
+.item-9{
+  justify-self: end;
+  align-self: end;
+  grid-row:5/6;
+  grid-column: 2/4;
+
+}
+.item-10{
+  justify-self: start;
+  align-self: start;
+  grid-row:6/7;
+  grid-column: 2/4;
+
+}
+.item-11{
+  justify-self: center;
+  grid-row: 7/8;
+  grid-column: 1/2;
+}
+.item-12{
+  grid-row: 7/8;
+  grid-column: 2/4;
+}
+.item-13 {
+  grid-row: 9/10;
+  grid-column: 1/4;
+}

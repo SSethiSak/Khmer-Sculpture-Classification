@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Menu
+{% endblock %}
+
+{% block main %}
+<div class = "item item-5"><form action="/result" method="post" enctype="multipart/form-data">
+    <label for="image_file" class="fw-bolder">Select image:</label>
+    <div>
+    <input type="file" accept="image/*" class="form-control-file" id="image_file" name="image_file">
+    </div>
+</form></div>
+<div class = "item item-6"><form action="/result" method="post" enctype="multipart/form-data">
+    <label for="image_file2" class="fw-bolder">Take a picture:</label>
+    <div>
+    <input type="file" accept="image/*" class="form-control-file" id="image_file2" name="image_file"
+        capture="camera">
+    </div>
+</form></div>
+
+
+
+
+<script>
+    $(document).ready(function() {
+        // Target both image file inputs
+        $('#image_file, #image_file2').change(function() {
+            // Find the closest form ancestor and submit it
+            $(this).closest('form').submit(); 
+        });
+    });
+</script>
+{% block main2%}{%endblock%}
+{% endblock%}

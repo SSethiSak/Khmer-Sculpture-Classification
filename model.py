@@ -1,7 +1,7 @@
 import tensorflow as tf
 
 from tensorflow.keras.preprocessing import image_dataset_from_directory
-from tensorflow.keras.layers.experimental.preprocessing import RandomFlip, RandomRotation
+from tensorflow.keras.layers import RandomFlip, RandomRotation
 
 BATCH_SIZE = 32
 IMG_SIZE = (160, 160)
@@ -29,9 +29,9 @@ def sculpture_model(image_shape = IMG_SIZE, data_augmentation = augment_data()):
   x = base_model(x, training = False)
 
   x = tf.keras.layers.GlobalAveragePooling2D()(x)
-  x = tf.keras.layers.Dropout(rate = 0.1)(x)
+  x = tf.keras.layers.Dropout(rate = 0.2)(x)
 
-  outputs = tf.keras.layers.Dense(5, activation = 'softmax')(x)
+  outputs = tf.keras.layers.Dense(6, activation = 'softmax')(x)
 
   model = tf.keras.Model(inputs, outputs)
 

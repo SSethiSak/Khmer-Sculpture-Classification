@@ -1,0 +1,60 @@
+{% extends "predict.html" %}
+
+{% block title %}
+    Menu
+{% endblock %}
+
+{% block main2 %}
+<div class = "item item-7"></div>
+<div class = "item item-8" >
+  <img src="data:image/jpeg;base64,{{ image }}" alt="Processed Image" style="width: 100%; height: auto">
+
+</div>
+
+<div class = "item item-9">                
+    <div class="card border-info mb-3" style="width: auto; height: auto">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="{{pic1}}" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Class : {{Class}}</h5>
+          <p class="card-text">{{desc}}</p>
+          <p class="card-text"><small class="text-body-secondary"></small></p>
+        </div>
+      </div>
+     </div>
+    </div>
+
+</div>
+
+<div class = "item item-10">
+    <div class="card" style="width: 100%; height: auto">
+        <div class="card-body">
+          <h5 class="card-title">{{Class}}</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">Information</h6>
+          <p class="card-text">{{desc2}}</p>
+          <a href="#info_section" class="card-link">learn more</a>
+        </div>
+      </div>
+</div>
+<div class = "item item-11"><h4>{{Class}}</h4></div>
+<div class = "item item-12">
+    <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: {{prob}}%">Confidence: {{prob}}%</div>
+      </div>
+</div>
+<div class= "item item-07"></div>
+<div class = "item item-13" id = "info_section" >
+  <div class="card border-primary mb-3" style="width: 100%; height: auto">
+    <div class="card-header">{{Class}}</div>
+    <div class="card-body text-primary">
+      <h5 class="card-title">Detailed Background</h5>
+      <p class="card-text">{{content}}</p>
+    </div>
+  </div>
+</div>
+
+
+{% endblock%}
