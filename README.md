@@ -20,7 +20,11 @@ https://colab.research.google.com/drive/1_SmNI6jUGS-uxSDbjfKmJxMV7lcmgxW2?usp=sh
 4. flask application
    
    To run this application:
+   
    -clone this repository
+   
    -install all the neccesary library
+   
    -run app.py or alternatively run "flask run" in terminal on the directory of the cloned repository.
+   
    -click on the ip link in terminal or alternatively navigate to http://127.0.0.1:5000 on any browser
