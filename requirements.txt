@@ -2,3 +2,5 @@ tensorflow
 numpy
 matplotlib
 Pillow
+Flask
+opencv-python
