@@ -14,7 +14,7 @@ https://colab.research.google.com/drive/1av7MHdwuVGiK-96lvOAVT8g6ZCh8Tb4D?usp=sh
 train the model on colab and save the models and weight after training is done for implementing into a flask application.(model is provided in this repository)
 for more details on how the model was trained:
 
-https://colab.research.google.com/drive/1_SmNI6jUGS-uxSDbjfKmJxMV7lcmgxW2?usp=sharing
+https://colab.research.google.com/drive/1FWBw1jIbP95PQ0D_vgDATWINOnU19nbe
 
 
 4. flask application
